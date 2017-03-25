@@ -1,0 +1,44 @@
+<navbar></navbar>
+
+<div class="row">
+  <div class="col-md-12" ng-controller="CarouselDemoCtrl">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides" index="$index">
+        <img class="img-responsive" ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--UI-NAVBAR
+<div ng-controller="NavigationController">
+  <li uib-dropdown="">
+    <a href="#" uib-dropdown-toggle="">
+      Proizvodi<b class="caret"></b>
+    </a>
+    <tree tree="proizvodi"></tree>
+  </li>
+</div>
+-->
+
+<!--UI-BOOTSTRAP
+<div ng-controller="DropdownmenuCtrl">
+  <span uib-dropdown on-toggle="toggled(open)">
+    <a href id="simple-dropdown" uib-dropdown-toggle>
+      Proizvodi<b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+    <li ng-repeat="category in catalog" ng-class="{active:
+    isActive(category.slug)}">
+    <a ui-sref="productCatalog
+    ({slug: category.slug})">{{category.name}}</a>
+  </li>
+</ul>
+</span>
+</div>
+-->
+
+<footer></footer>

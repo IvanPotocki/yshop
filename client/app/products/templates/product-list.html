@@ -1,0 +1,33 @@
+<navbar></navbar>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="pageheader">Katalog <small>{{query}}</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3" ng-show="products.length < 1"> Nema proizvoda.</div>
+    <div class="col-md-3" ng-repeat="product in products">
+
+      <div class="thumbnail productbox g">
+          <a ui-sref="viewProduct({id: product._id})">
+            <img src="{{product.imageUrl}}" alt="{{product.title}}" class="img-responsive">
+            <div class="producttitle">{{product.title}}</div>
+          </a>
+        
+        <div class="productprice">
+          <div class="pull-right">
+            <ngcart-addtocart id="{{product._id}}" name="{{product.title}}" price="{{product.price}}" template-url="components/ngcart/addtocart.html" data="product">KUPI</ngcart-addtocart>
+            <a ui-sref="viewProduct({id: product._id})" class="btn btn-primary" role="button">Više</a>
+          </div>
+          <div class="pricetext">{{product.price | currency: ''}} Kn</div>
+        </div>
+       </div> 
+      
+
+    </div>
+  </div>
+</div>
+
+<footer></footer>

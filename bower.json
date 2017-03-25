@@ -1,0 +1,32 @@
+{
+  "name": "yeashop",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.5.8",
+    "json3": "~3.3.1",
+    "es5-shim": "~4.5.9",
+    "bootstrap-sass-official": "~3.3.7",
+    "bootstrap": "~3.3.7",
+    "bootswatch": "~3.3.7",
+    "angular-resource": "~1.5.8",
+    "angular-cookies": "~1.5.8",
+    "angular-sanitize": "~1.5.8",
+    "angular-bootstrap": "~2.3.1",
+    "font-awesome": ">=4.1.0",
+    "lodash": "~4.16.4",
+    "angular-socket-io": "~0.7.0",
+    "angular-ui-router": "~0.3.1",
+    "ng-file-upload": "^12.2.12",
+    "ng-file-upload-shim": "^12.2.12",
+    "ngCart": "ngcart#1.0.0",
+    "braintree-angular": "1.3.1",
+    "angular-animate": "^1.5.8",
+    "ui-navbar": "^0.5.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.8"
+  },
+  "resolutions": {
+    "angular": "~1.5.8"
+  }
+}
