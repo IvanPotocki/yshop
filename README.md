@@ -25,12 +25,12 @@ npm install -g generator-angular-fullstack@3.0.0-rc4
   - start db server ---> mongod --dbpath=path...\yshop\data\
 
 ### 3rd party Integrations
-  - enter social (Facebook,Google) and Braintree API keys ---> yshop/server/config/local.env.js 
+  - enter your social (Facebook,Google) and Braintree API credentials ---> yshop/server/config/local.env.js 
 
 ### Test
-  - Admin user - user: admin@admin.com, pass: admin
-  - Test user -  user: test@test.com, pass: test
-  - Cedit card - 4111 1111 1111 1111
+  - admin user - user: admin@admin.com, pass: admin
+  - test user -  user: test@test.com, pass: test
+  - credit card - 4111 1111 1111 1111
 
 
 
